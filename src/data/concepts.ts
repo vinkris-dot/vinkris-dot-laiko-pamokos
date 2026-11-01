@@ -1,6 +1,23 @@
 import type { Concept } from './types'
 
 export const CONCEPTS: Concept[] = [
+  // 1 pamoka
+  { id: 'kvantas', term: 'Kvantas', en: 'quantum', short: 'Mažiausia porcija, kuria gali keistis dydis – pavyzdžiui, atomo energija.', lesson: 1, section: 1 },
+  { id: 'energijos-lygmuo', term: 'Energijos lygmuo', en: 'energy level', short: 'Leidžiama energijos reikšmė atome – „laiptelis“, tarp kurių šokinėja elektronas.', lesson: 1, section: 1 },
+  { id: 'interferencija', term: 'Interferencija', en: 'interference', short: 'Bangų sudėtis: kur sutampa – stiprėja, kur priešingos – naikina viena kitą. Dviejų plyšių juostos.', lesson: 1, section: 2 },
+  { id: 'superpozicija', term: 'Superpozicija', en: 'superposition', short: 'Būsena, kuri yra kelių galimybių derinys ir matuojant duoda vieną iš jų su tikimybe.', lesson: 1, section: 3 },
+  { id: 'matavimas', term: 'Matavimas', en: 'measurement', short: 'Fizinė sąveika, kuri išgauna rezultatą ir keičia matuojamą sistemą. Sąmonės nereikia.', lesson: 1, section: 4 },
+  { id: 'dekoherencija', term: 'Dekoherencija', en: 'decoherence', short: 'Kvantiškumo nykimas dėl sąveikos su aplinka; todėl dideli daiktai nebūna superpozicijoje.', lesson: 1, section: 5 },
+  // 2 pamoka
+  { id: 'koreliacija', term: 'Koreliacija', en: 'correlation', short: 'Rezultatų sutapimas tarp dviejų pusių, matomas tik juos palyginus.', lesson: 2, section: 1 },
+  { id: 'belo-nelygybe', term: 'Belo nelygybė', en: 'Bell inequality', short: 'Riba (75 % žaidime), kurios negali viršyti jokie iš anksto sutarti atsakymai. Gamta ją viršija.', lesson: 2, section: 2 },
+  { id: 'nesignalizavimas', term: 'Nesignalizavimas', en: 'no-signalling', short: 'Susietumu negalima perduoti žinutės: kito galo statistika nepriklauso nuo tavo veiksmų.', lesson: 2, section: 3 },
+  { id: 'kvantine-kriptografija', term: 'Kvantinis raktų paskirstymas', en: 'quantum key distribution', short: 'Rakto dalijimasis fotonais, kuriame pasiklausymas palieka matomas klaidas.', lesson: 2, section: 4 },
+  // 3 pamoka
+  { id: 'kvantinis-laukas', term: 'Kvantinis laukas', en: 'quantum field', short: 'Erdvę užpildantis dydis, kurio virpesiai yra dalelės.', lesson: 3, section: 1 },
+  { id: 'vakuumas', term: 'Vakuumas', en: 'vacuum', short: 'Žemiausia lauko būsena – ne tuštuma, o nenutrūkstantis virpėjimas.', lesson: 3, section: 2 },
+  { id: 'kazimiro-efektas', term: 'Kazimiro efektas', en: 'Casimir effect', short: 'Vakuumo virpesių spaudimas, stumiantis dvi artimas plokšteles viena prie kitos. Išmatuotas.', lesson: 3, section: 3 },
+  { id: 'higso-laukas', term: 'Higso laukas', en: 'Higgs field', short: 'Laukas, nenulinis net vakuume; sąveika su juo suteikia dalelėms masę.', lesson: 3, section: 4 },
   // 4 pamoka
   { id: 'vienalaikiskumas', term: 'Vienalaikiškumo reliatyvumas', en: 'relativity of simultaneity', short: 'Ar du įvykiai vyksta vienu metu, priklauso nuo stebėtojo greičio. Bendro „dabar“ visiems nėra.', lesson: 4, section: 1 },
   { id: 'erdvelaikis', term: 'Erdvėlaikis', en: 'spacetime', short: 'Erdvė ir laikas kaip vienas keturmatis darinys, kurį skirtingi stebėtojai pjauna skirtingai.', lesson: 4, section: 1 },

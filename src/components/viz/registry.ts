@@ -3,6 +3,19 @@ import { lazy, type ComponentType, type LazyExoticComponent } from 'react'
 type V = LazyExoticComponent<ComponentType>
 
 export const VIZ: Record<string, V> = {
+  'energy-levels': lazy(() => import('./l1/EnergyLevels')),
+  'double-slit': lazy(() => import('./l1/DoubleSlit')),
+  'superposition': lazy(() => import('./l1/Superposition')),
+  'measurement-kick': lazy(() => import('./l1/MeasurementKick')),
+  'decoherence': lazy(() => import('./l1/Decoherence')),
+  'entangled-pair': lazy(() => import('./l2/EntangledPair')),
+  'bell-game': lazy(() => import('./l2/BellGame')),
+  'no-signalling': lazy(() => import('./l2/NoSignalling')),
+  'qkd': lazy(() => import('./l2/QKD')),
+  'field-particle': lazy(() => import('./l3/FieldParticle')),
+  'vacuum': lazy(() => import('./l3/Vacuum')),
+  'casimir': lazy(() => import('./l3/Casimir')),
+  'higgs': lazy(() => import('./l3/Higgs')),
   'simultaneity': lazy(() => import('./l4/Simultaneity')),
   'block-universe': lazy(() => import('./l4/BlockUniverse')),
   'time-parameter': lazy(() => import('./l4/TimeParameter')),
