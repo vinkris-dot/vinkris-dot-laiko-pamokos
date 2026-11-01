@@ -1,0 +1,108 @@
+import type { Lesson } from './types'
+
+export const LESSON6: Lesson = {
+  id: 6,
+  slug: 'biochemija',
+  title: 'Laiko biochemija',
+  subtitle: 'Laikrodžiai ląstelėje, kūne ir genų skaityme',
+  minutes: 15,
+  review: false,
+  ready: true,
+  sections: [
+    {
+      id: 'l6-cirkadinis',
+      title: 'Laikrodis kiekvienoje ląstelėje',
+      text: [
+        'Beveik kiekviena tavo ląstelė turi laikrodį, sudarytą iš kelių baltymų. Baltymai CLOCK ir BMAL1 įjungia genus, kurie gamina baltymus PER ir CRY. Šie kaupiasi, grįžta į branduolį ir išjungia CLOCK ir BMAL1 – tai yra patys save. Paskui suyra, slopinimas dingsta ir ciklas prasideda iš naujo. Vienas ratas trunka apie 24 valandas. Už šio mechanizmo atradimą 2017 m. skirta Nobelio premija.',
+        'Žemiau kilpa sukasi. Slankikliu pakeisk jos greitį – taip veikia genų mutacijos – ir stebėk, kaip po kelių dienų vidinis laikrodis išsiderina nuo tikros paros.',
+      ],
+      tag: 'įrodyta',
+      why: 'Grįžtamojo ryšio kilpa (Hall, Rosbash, Young) nustatyta vaisinėse muselėse ir patvirtinta žinduoliuose, įskaitant žmogų. Tai molekulinės biologijos vadovėlinis rezultatas.',
+      viz: 'circadian-loop',
+      seen: 'Laikrodis ląstelėje – tai baltymai, kurie išjungia patys save, o ciklas trunka apie parą.',
+      concepts: ['cirkadinis-laikrodis', 'griztamojo-rysio-kilpa'],
+    },
+    {
+      id: 'l6-sviesa',
+      title: 'Šviesa – pagrindinis derintojas',
+      text: [
+        'Ląstelių laikrodžiai patys savaime „eina“ ne lygiai 24 valandas – vieniems kiek ilgiau, kitiems trumpiau. Kasdien juos derina šviesa, pirmiausia rytinė: ji pasiekia specialias akies ląsteles, o iš jų – pagrindinį laikrodį smegenyse. Rytinė šviesa laikrodį pasuka į priekį, vakarinė – atgal.',
+        'Iš to kyla chronotipai (chronotypes): vieni žmonės yra „vyturiai“, kiti – „pelėdos“, ir tai ne valios, o biologijos reikalas. Žemiau pasirink chronotipą ir pažiūrėk, kaip rytinė ar vakarinė šviesa pastumia miego langą.',
+      ],
+      tag: 'įrodyta',
+      why: 'Šviesos poveikis laikrodžiui (fazinio atsako kreivė) ir chronotipų paveldimumas patvirtinti daugybe tyrimų. Konkretūs valandų skaičiai – vidurkiai, kurie žmonėms skiriasi.',
+      viz: 'light-phase',
+      seen: 'Ne tu pasirenki, kada tau norisi miego – bet šviesa ryte ar vakare laikrodį pastumia.',
+      concepts: ['chronotipas', 'sinchronizatorius'],
+    },
+    {
+      id: 'l6-ciklas',
+      title: '28 dienų ciklas',
+      text: [
+        'Be paros laikrodžio, moters kūnas turi ir ilgesnį – maždaug 28 dienų. Jį veda du hormonai: estrogenas (estrogen) ir progesteronas (progesterone). Pirmoje ciklo pusėje kyla estrogenas, viduryje – ovuliacija, antroje pusėje dominuoja progesteronas, o ciklo pabaigoje abu krinta.',
+        'Hormonai veikia ne tik kiaušides: jie keičia apetitą, kūno temperatūrą, energiją ir nuotaiką. Žemiau slink per dienas ir stebėk, kaip kreivės ir kūno rodikliai keičiasi. Tai vidurkiai – tavo ciklas gali skirtis.',
+      ],
+      tag: 'įrodyta',
+      why: 'Hormonų kreivės ir ciklo fazės – vadovėlinė fiziologija. Poveikis apetitui, temperatūrai ir energijai patvirtintas, tačiau nuotaikos pokyčiai tarp moterų labai skiriasi, todėl čia rodomi tik vidurkiai.',
+      viz: 'cycle-28',
+      seen: 'Antras kūno laikrodis: hormonų bangos, kurios per mėnesį keičia apetitą, temperatūrą ir energiją.',
+      concepts: ['estrogenas', 'progesteronas', 'liutealine-faze'],
+    },
+    {
+      id: 'l6-epigenetika',
+      title: 'Patirtis kaip žymuo ant genų',
+      text: [
+        'Genai nesikeičia per gyvenimą, bet keičiasi tai, kaip jie skaitomi. Patirtis – stresas, mityba, šviesa – prideda ant DNR cheminių žymenų, dažniausiai metilo grupių. Tai vadinama metilinimu (methylation). Žymuo veikia kaip užrašas „neskaityti“: genas lieka, bet jo baltymo gaminama mažiau. Tai epigenetika (epigenetics).',
+        'Žemiau – genas su jo „jungikliu“. Slankikliu pridėk patirties žymenų ir stebėk, kaip blėsta geno skaitymas. Ląstelės lygmeniu tai įrodyta. Ar tokie žymenys perduodami vaikams – žmonėms dar hipotezė.',
+      ],
+      tag: 'įrodyta',
+      why: 'Metilinimas ir jo poveikis genų skaitymui ląstelėje – įrodytas ir išmatuojamas. Žymenų perdavimas vaikams ir anūkams žmonėms – hipotezė: gyvūnuose yra įrodymų, žmonėse rezultatai dar prieštaringi.',
+      viz: 'epigenetics',
+      seen: 'Patirtis nekeičia geno teksto, bet keičia, ar jis skaitomas – ir tai galima išmatuoti.',
+      concepts: ['epigenetika', 'metilinimas'],
+    },
+    {
+      id: 'l6-trys-laikrodziai',
+      title: 'Trys laikrodžiai',
+      text: [
+        'Per tris pamokas matei tris skirtingus laikus. Fizikinis laikas neturi „dabar“ – tik eilę, kurią nustato entropija. Smegenų laikas sukuria „dabar“: vėluojantį, bet užpildytą prognoze. Kūno laikas – paros ir mėnesio bangos, kurios nustato, kada tas „dabar“ būna žvalus ar mieguistas.',
+        'Žemiau – visi trys viename rate. Suk paros laiką ir stebėk, kaip fizikinis laikas tik teka, kūno laikrodis keičia hormonų lygį, o smegenys sudeda iš to tavo patiriamą akimirką. Tai – ne teorija, o šio kurso žemėlapis.',
+      ],
+      tag: 'spėjimas',
+      why: 'Kiekvienas iš trijų laikrodžių atskirai turi savo įrodymų svorį (žr. atitinkamas pamokas). Bet jų sujungimas į vieną vaizdą – šio kurso autorinis apibendrinimas, ne mokslinis rezultatas.',
+      viz: 'three-clocks',
+      seen: 'Fizika duoda kryptį, kūnas – ritmą, smegenys – akimirką. „Dabar“ gimsta jų sankirtoje.',
+      concepts: ['trys-laikrodziai'],
+    },
+  ],
+  quiz: [
+    {
+      id: 'l6-q1',
+      q: 'Kas ląstelės laikrodyje išjungia baltymus CLOCK ir BMAL1?',
+      options: ['Šviesa, patekusi į ląstelę', 'Baltymai PER ir CRY, kuriuos jie patys įjungė', 'Hormonas melatoninas'],
+      answer: 1,
+      explain: 'Tai grįžtamojo ryšio kilpa: CLOCK ir BMAL1 įjungia PER ir CRY gamybą, o susikaupę PER ir CRY juos išjungia. Paskui suyra, ir ratas sukasi iš naujo.',
+    },
+    {
+      id: 'l6-q2',
+      q: 'Kaip vakarinė ryški šviesa veikia vidinį laikrodį?',
+      options: ['Pasuka jį į priekį – anksčiau norisi miego', 'Pasuka jį atgal – miegas vėluoja', 'Neveikia, nes laikrodis eina pats'],
+      answer: 1,
+      explain: 'Vakarinė šviesa laikrodį vėlina, rytinė – ankstina. Todėl ekranai vakare stumia miegą vėliau.',
+    },
+    {
+      id: 'l6-q3',
+      q: 'Ką keičia metilinimas?',
+      options: ['Patį geno tekstą (DNR seką)', 'Tai, kiek genas skaitomas', 'Chromosomų skaičių'],
+      answer: 1,
+      explain: 'Metilo žymuo – tai užrašas ant geno, ne pakeitimas jame. Genas lieka tas pats, bet skaitomas mažiau arba daugiau.',
+    },
+    {
+      id: 'l6-q4',
+      q: 'Kokia žymė tinka teiginiui „tėvų patirtis per metilinimą perduodama vaikams“ (žmonėms)?',
+      options: ['įrodyta', 'hipotezė', 'mitas'],
+      answer: 1,
+      explain: 'Ląstelės lygmeniu metilinimas įrodytas, gyvūnuose yra perdavimo įrodymų, bet žmonėms tyrimai dar prieštaringi. Todėl hipotezė.',
+    },
+  ],
+}
