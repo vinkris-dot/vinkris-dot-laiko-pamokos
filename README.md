@@ -1,0 +1,1 @@
+# vinkris-dot-laiko-pamokos
