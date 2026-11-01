@@ -6,6 +6,8 @@ import { useProgress } from '../lib/progress'
 import { Tag } from '../components/ui/Tag'
 import { Formula } from '../components/ui/Formula'
 import { VIZ } from '../components/viz/registry'
+import { Deeper } from '../components/ui/Deeper'
+import { MORE } from '../data/more'
 
 export function LessonOverview() {
   const { slug } = useParams()
@@ -89,6 +91,7 @@ export function LessonSection() {
             <div className="text-xs uppercase tracking-widest text-accent">Ką čia pamatei</div>
             <p className="mt-1">{section.seen}</p>
           </aside>
+          {MORE[section.id] && <Deeper paragraphs={MORE[section.id]} />}
         </motion.article>
       </AnimatePresence>
 

@@ -94,6 +94,10 @@ export const LESSON4: Lesson = {
       viz: 'entropy-box',
       seen: 'Kiekvieną judesį galima atsukti, bet tvarka virsta netvarka vis tiek – nes netvarkos būdų daug daugiau.',
       concepts: ['entropija', 'laiko-strele', 'griztamumas'],
+      formula: {
+        text: 'S = k · log W',
+        note: 'Boltzmanno formulė: entropija S yra išsidėstymų skaičiaus W logaritmas (k – pastovus daugiklis). Kuo daugiau būdų atrodyti vienodai, tuo didesnė entropija.',
+      },
     },
     {
       id: 'l4-atmintis',
