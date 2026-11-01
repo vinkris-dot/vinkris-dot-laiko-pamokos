@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { HashRouter } from 'react-router-dom'
+import { HashRouter, MemoryRouter } from 'react-router-dom'
 import App from './App'
 import { ProgressProvider } from './lib/progress'
 import './index.css'
@@ -15,12 +15,17 @@ if ('serviceWorker' in navigator) {
   })
 }
 
+// Įterpta į svetimą rėmelį (pvz., peržiūra claude.ai) – adreso eilutė neprieinama, tad maršrutai laikomi atmintyje.
+let embedded = false
+try { embedded = window.top !== window.self } catch { embedded = true }
+const Router = embedded ? MemoryRouter : HashRouter
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
+    <Router>
       <ProgressProvider>
         <App />
       </ProgressProvider>
-    </HashRouter>
+    </Router>
   </StrictMode>,
 )
